@@ -1,0 +1,14 @@
+[
+    {
+      "name": "My First App",
+      "checked": true
+    },
+    {
+      "name": "My Second App",
+      "checked": false
+    },
+    {
+      "name": "My Third App",
+      "checked": false
+    }
+]

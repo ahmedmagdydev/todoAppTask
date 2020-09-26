@@ -1,0 +1,17 @@
+<div class="list-wrapper">
+    <ul class="d-flex flex-column todo-list">
+      <li  *ngFor="let todo of todoList; let i = index" class="{{todo.checked ? 'completed' : 'notcompleted'}}">
+        <div class="form-check" >
+          <label class="form-check-label">
+            <input 
+              class="checkbox" 
+              type="checkbox" 
+              (click)="checkTodo($event, i)"
+              [checked]= "todo.checked" />
+                {{todo.name}} <i class="input-helper"></i
+          ></label>
+        </div>
+        <i class="remove mdi mdi-close-circle-outline" (click)="removeTodo($event, i)"></i>
+      </li>
+    </ul>
+  </div>
